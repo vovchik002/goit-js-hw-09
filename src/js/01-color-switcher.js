@@ -24,4 +24,4 @@ function onClickStop(evn) {
  startBtn.removeAttribute('disabled','disabled')
 }
 
-// null представляє відсутність будь-якого об'єктного значення , nullчасто присутні в місцях, де очікується об'єкт, але відповідного об'єкта немає.
+

@@ -87,37 +87,6 @@ function changeHtmlValues({ days, hours, minutes, seconds }) {
 
 
 
-// flatpickr це легкий і потужний засіб вибору дати й часу але він не залежить від жодних бібліотек. npm i flatpickr --save.
-// flatpickr-Бібліотека очікує, що її ініціалізують на елементі input[type = "text"], тому ми додали до HTML документу поле input#datetime - picker.
-//const flatpick = flatpickr('#datetime-picker', options);  Другим аргументом функції flatpickr(selector, options) можна передати необов'язковий об'єкт параметрів
-
-// enableTime		Показує самий годиник
-// time_24hr:		Відображає засіб вибору часу в 24-годинному режимі без вибору
-// defaultDate:new Date(),	(new Date()-це обєкт який показує дату теперішнюдату на даний момент)
-// minuteIncrement	Ціле число		Регулює крок для введення хвилин (включно з прокручуванням)
- 
-// onClose		Функції, які запускаються щоразу, коли календар закривається
-// Метод getTime()повертає кількість мілісекунд після епохи , яка визначається як опівніч на початку 1 січня 1970 року за UTC. Повертає секунди з того часу
-//  selectedDates[] - це масив обраних дат, тому ми беремо перший елемент.Тобто це число яке ми  (Wed Nov 10 2022 01:24:00 GMT+0200)
-// options.defaultDate або new Date() -це теперішнє число таке яке є на даний момент
-// Метод Date.now() це теперішня дата наша но не як (Tue Nov 29 2022 01:02:37 GMT+0200) а в мілісекундах від 1 січня 1970 року за UTC (2176371231471)
-// new Date()-повертає вибрану даті в такому форматі Tue Nov 29 2022 01:02:37 GMT+0200 --- Метод Date.now(2176371231471) так само но в млісекундах
-// let presentTime = null; значення null що ще немає значення но буде це просто як пусте місце що потім заповнеться
-
-// if (options.defaultDate.getTime() > selectedDates[0].getTime() ) якщо теперішня дата в міліс буде більша за за дату яку вибрали
-//  startBtn.removeAttribute('disabled') добавляємодо кнопки отрибут isabled щоб кнопка стала неактивною
-// Notify.failure("Please choose a date in the future");бібліотека замість простого алерта
-// let presentTime = null;--presentTime = selectedDates[0].getTime(); це та дата яку ми вибрали і перевели в мілісекунди .getTime()
-
-//  function onClickStart() { timer.start()} ця функція запусти наш обєкт в якому є функція start()
-
-
-
-
-
-
-
-
 
 
 
